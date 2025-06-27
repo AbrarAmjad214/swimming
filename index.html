@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kick on Football Academy Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="header">
+      <div class="photo-box">Photo</div>
+      <div class="form-title">
+        <h1>KICK ON Swimming CLUB <br> Registration Form</h1>
+        <p class="para">[Please fill the form in block Letters] [Submit one Photograph for ID card]</p>
+      </div>
+      <div class="logo-box">
+        <img src="images\logo2.png" alt="Academy Logo">
+      </div>
+    </div>
+    <form action="https://formsubmit.co/kickonlahore@gmail.com" method="POST">
+      <div class="section-title">PLAYER’S GENERAL DETAILS</div>
+      <div class="row">
+        <label>Name:<input type="text" name="player_name"></label>
+        <label>Father’s Name:<input type="text" name="father_name"></label>
+      </div>
+      <div class="row">
+        <label>School:<input type="text" name="school"></label>
+        <label>Class:<input type="text" name="class"></label>
+        <label>Date Of Birth:<input type="date" name="dob"></label>
+        <label>Gender:
+          <select name="gender">
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="section-title">PLAYER’S CONTACT DETAILS</div>
+      <div class="row">
+        <label>Landline No:<input type="text" name="landline"></label>
+        <label>Mobile No:<input type="text" name="mobile"></label>
+        <label>Email:<input type="email" name="email"></label>
+      </div>
+      <div class="row">
+        <label>Residential Address:<input type="text" name="address"></label>
+        <label>P.O:<input type="text" name="po"></label>
+      </div>
+
+      <div class="section-title">SPORT RELATED DETAILS</div>
+      <div class="row">
+        <label>Injuries:<input type="text" name="injuries"></label>
+        <label>Treatment:<input type="text" name="treatment"></label>
+      </div>
+      <div class="row">
+        <label>Jersey Size:<input type="text" name="jersey_size"></label>
+        <label>Covid Vaccinated:<input type="text" name="covid_vaccinated"></label>
+        <label>Dates:<input type="text" name="dates"></label>
+      </div>
+      <div class="row">
+        <label>Fav Player:<input type="text" name="fav_player"></label>
+        <label>Fav Club:<input type="text" name="fav_club"></label>
+        <label>Fav Position:<input type="text" name="fav_position"></label>
+      </div>
+      <div class="row">
+        <label class="long-label">Why do you want to join Kick-On Football Academy?</label>
+        <textarea rows="2" name="why_join_player"></textarea>
+      </div>
+
+      <div class="section-title">PARENT’S/GUARDIAN’S DETAILS</div>
+      <div class="row">
+        <label>Name:<input type="text" name="guardian_name"></label>
+        <label>Relationship:<input type="text" name="relationship"></label>
+        <label>Profession:<input type="text" name="profession"></label>
+      </div>
+      <div class="row">
+        <label>Emergency No:<input type="text" name="emergency_no"></label>
+        <label>Mobile No:<input type="text" name="guardian_mobile"></label>
+        <label>Email:<input type="email" name="guardian_email"></label>
+      </div>
+      <div class="row">
+        <label>Fav Player:<input type="text" name="guardian_fav_player"></label>
+        <label>Fav Club:<input type="text" name="guardian_fav_club"></label>
+        <label>Fav Pakistani Player:<input type="text" name="guardian_fav_pak_player"></label>
+      </div>
+      <div class="row">
+        <label class="long-label">Why do you want your child to join Kick-On Football Academy?</label>
+        <textarea rows="2" name="why_join_guardian"></textarea>
+      </div>
+
+      <div class="row">
+        <label>I permit my child’s photograph to be used for promotions:
+          <input type="radio" name="permission" value="yes"> YES
+          <input type="radio" name="permission" value="no"> NO
+        </label>
+      </div>
+
+      <div class="declaration">
+        <strong>GUARDIAN DECLARATION:</strong><br>
+        We hereby certify that our ward is in sound physical, mental condition and capable of participating in soccer activities. 
+        We understand the possibility of physical injury associated with soccer and I permit Kick-on Football Academy coaching 
+        staff to act on my behalf in accordance with their best judgment in any emergency requiring medical attention...
+      </div>
+
+      <div class="row">
+        <label>GUARDIAN SIGNATURE: <input type="text" class="short" name="guardian_signature"></label>
+        <label>DATE: <input type="date" class="short" name="guardian_signature_date"></label>
+      </div>
+
+      <div class="section-title">FOR OFFICE USE</div>
+      <div class="row">
+        <label>Registration No:<input type="text" name="registration_no"></label>
+        <label>Amount Paid:<input type="text" name="amount_paid"></label>
+        <label>Date:<input type="date" name="office_date"></label>
+        <label>Mode: 
+          <select name="payment_mode">
+            <option value="Cash">Cash</option>
+            <option value="Cheque">Cheque</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label>Cheque No:<input type="text" name="cheque_no"></label>
+        <label>Drawn No:<input type="text" name="drawn_no"></label>
+        <label>Date:<input type="date" name="cheque_date"></label>
+      </div>
+
+      <div class="submit-row">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kofa Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #202124;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #1558b0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Kofa Registration Form</h2>
+    <form action="https://formsubmit.co/kickonlahore@gmail.com" method="POST">
+  <div class="form-group">
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="father">Father's Name *</label>
+    <input type="text" id="father" name="father" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required>
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age *</label>
+    <input type="number" id="age" name="age" min="10" max="100" required>
+  </div>
+
+  <div class="form-group">
+    <label for="emailid">Email ID *</label>
+    <input type="email" id="emailid" name="emailid" required>
+  </div>
+
+  <div class="form-group">
+    <label for="center">Which center would you like to join? *</label>
+    <select id="center" name="center" required>
+      <option value="">-- Select Center --</option>
+      <option value="Johar Town">Johar Town</option>
+      <option value="DHA Rahbar">DHA Rahbar</option>
+    </select>
+  </div>
+
+  <!-- Hidden Inputs for FormSubmit behavior -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New Admission Form Submission">
+  <input type="hidden" name="_next" value="https://football-pied-two.vercel.app/login.html">
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>
+
+</body>
+</html>
